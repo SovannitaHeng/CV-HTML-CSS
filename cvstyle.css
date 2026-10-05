@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --left-color: #263238;
+    --left-light: #90a4ae;
+    --left-soft: #37474f;
+
+    --main-color: #2f3e46;
+    --accent-color: #d97757;
+    --accent-light: #f4ddd4;
+
+    --background: #eef1f0;
+    --white: #ffffff;
+    --card: #f8faf9;
+    --border: #dfe5e2;
+
+    --text: #39464d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.resume-container {
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+        0 15px 40px rgba(38, 50, 56, 0.12);
+}
+.profile-panel {
+    width: 300px;
+    flex-shrink: 0;
+    background: var(--left-color);
+    color: white;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.profile-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-box img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.profile-box h1 {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.profile-box h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #cfd8dc;
+    letter-spacing: 0.5px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: var(--left-soft);
+}
+
+.info-block h2 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.info-block h2::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: var(--accent-color);
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-style: normal;
+}
+
+.contact-items p {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d9e0e3;
+}
+
+.contact-items i {
+    color: var(--accent-color);
+    width: 16px;
+    margin-top: 4px;
+}
+
+.contact-items a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-items a:hover {
+    color: var(--accent-color);
+}
+
+.skill-groups {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.skill-group h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #ffffff;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.skill-pills span {
+    padding: 5px 9px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    font-size: 10px;
+    color: #dce3e5;
+    transition: 0.2s;
+}
+
+.skill-pills span:hover {
+    background: var(--accent-color);
+    color: white;
+}
+.content-area {
+    flex: 1;
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+}
+.cv-section {
+    margin-bottom: 38px;
+}
+
+.heading-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin: 12px 0 20px 0;
+}
+
+.content-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 25px;
+}
+
+.heading-row h2 {
+    color: var(--main-color);
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.sub-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 6px;
+}
+
+.sub-list li {
+    margin-bottom: 4px;
+    font-size: 13px;
+}
